@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (5.9.0)
+  - FLAnimatedImage (1.0.16)
+  - HandyJSON (5.0.2)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Realm (10.7.6):
+    - Realm/Headers (= 10.7.6)
+  - Realm/Headers (10.7.6)
+  - RealmSwift (10.7.6):
+    - Realm (= 10.7.6)
+
+DEPENDENCIES:
+  - FLAnimatedImage (= 1.0.16)
+  - HandyJSON (~> 5.0.2)
+  - Moya (~> 15.0)
+  - Realm (= 10.7.6)
+  - RealmSwift (= 10.7.6)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLAnimatedImage
+    - HandyJSON
+    - Moya
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
+  FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Realm: ed860452717c8db8f4bf832b6807f7f2ce708839
+  RealmSwift: e31c4ddbcc42ac879313d656b86f9ca539f6f4f4
+
+PODFILE CHECKSUM: c634bfbf91ffa78c67df4b7da836808a2a3f5ff4
+
+COCOAPODS: 1.12.1

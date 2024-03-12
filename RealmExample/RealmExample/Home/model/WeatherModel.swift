@@ -16,6 +16,7 @@ class WeatherModel:Object  {
     @objc dynamic var status = ""
     @objc dynamic var date = ""
     @objc dynamic var time = ""
+    @objc dynamic var custom_Value = ""
     @objc dynamic var cityInfo: CityInfo? = CityInfo()
     @objc dynamic var data: DataModel? = DataModel()
     override static func primaryKey() -> String? {

@@ -51,11 +51,16 @@
                                     <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLc-kR-97S"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="mHc-ia-sPL">
+                                <rect key="frame" x="190" y="439" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="activity_view" destination="mHc-ia-sPL" id="Amh-AE-fnq"/>
                         <outlet property="titleLab" destination="fFb-Rc-eea" id="uAj-BB-o19"/>
                     </connections>
                 </viewController>

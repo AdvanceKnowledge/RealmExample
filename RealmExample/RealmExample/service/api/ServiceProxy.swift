@@ -54,10 +54,12 @@ class ServiceProxy: NSObject {
     }
     
     
-    func wylGetmodel<E: HandyJSON>(target: TargetType, needCheckNull: Bool = false, type: E.Type, error: ((String?) -> Void)? = nil, complish: @escaping (E) -> Void) {
+    func wylGetmodel<E: HandyJSON>(target: TargetType, needCheckNull: Bool = false, type: E.Type, error: ((String?) -> Void)? = nil, complish: @escaping (E) -> Void, finally:@escaping ()->Void) {
         self.request(target: target, needCheckNull: needCheckNull, error: { message in
+            finally()
             error?(message)
         }, complish: { (response) in
+            finally()
             guard let r = response else {
                 error?("暂无数据")
                 return
@@ -65,6 +67,7 @@ class ServiceProxy: NSObject {
             let dic = self.dataToDictionary(data: r.data) ?? Dictionary<String, Any>()
             let model = E.deserialize(from: dic) ?? E()
             complish(model)
+            
         })
     }
     

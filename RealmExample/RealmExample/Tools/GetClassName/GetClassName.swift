@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 extension NSObject{
     var className1: String {
         return NSStringFromClass(type(of: self))
@@ -19,6 +20,16 @@ extension NSObject{
         // prints more readable results for dictionaries, arrays, Int, etc
         return String(describing: type(of: obj))
     }
+}
+
+extension UIActivityIndicatorView {
+    func startActivityView() {
+        self.isHidden = false
+        self.startAnimating()
+    }
     
-    
+    func stopActivityView() {
+        self.isHidden = true
+        self.stopAnimating()
+    }
 }

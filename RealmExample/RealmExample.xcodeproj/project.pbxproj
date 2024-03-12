@@ -717,6 +717,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2L8E4NLY72;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "\"Any iOS Simulator SDK: arm64\"";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealmExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -748,6 +749,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2L8E4NLY72;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "\"Any iOS Simulator SDK: arm64\"";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RealmExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.activity_view.isHidden = true
         getWeather()
-    }
+    } 
     @IBAction func delegateAll(_ sender: UIButton) {
         RealmManager.share.deleteAll()
     }

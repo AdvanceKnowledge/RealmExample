@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var activity_view: UIActivityIndicatorView!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.activity_view.isHidden = true
         getWeather()
